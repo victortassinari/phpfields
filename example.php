@@ -31,6 +31,9 @@ if (isset($_POST["btn"])) {
     <input type="radio" value="f" name="rSexo" /> F
 
     <br/><br/>
+
+    <input type="hidden" name="fields" id="fields" value="<?php echo (count($_POST) > 0) ? base64_encode(json_encode($_POST)) : ""  ?>" />
+
     <input type="submit" name="btn" value="Save"/>
 </form>
 </body>
