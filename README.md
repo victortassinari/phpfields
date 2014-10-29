@@ -10,9 +10,6 @@ Example of use:
 </pre>
 
 <pre>
-&lt;?php
-if (isset($_POST["submitButton"])) {
-    setcookie("fields", base64_encode(json_encode($_POST)));
-}
-?&gt;
+<input type="hidden" name="fields" id="fields" value="<?php echo (count($_POST) > 0) ? base64_encode(json_encode($_POST)) : ""  ?>" />
+
 </pre>
