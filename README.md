@@ -10,6 +10,6 @@ Example of use:
 </pre>
 
 <pre>
-<input type="hidden" name="fields" id="fields" value="<?php echo (count($_POST) > 0) ? base64_encode(json_encode($_POST)) : ""  ?>" />
+&lt;input type="hidden" name="fields" id="fields" value="<?php echo (count($_POST) > 0) ? base64_encode(json_encode($_POST)) : ""  ?>" /&gt;
 
 </pre>
